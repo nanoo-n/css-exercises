@@ -69,23 +69,32 @@ button.cancel {
 }
 
 /*SOLUTION*/
-.icon {
-  flex-shrink: 0;
-  margin-right: 20px;
-}
 
 .modal {
   display: flex;
-  padding: 15px;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.icon, .close-button {
+  flex-shrink: 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons {
+  flex-direction: row;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
   font-weight: 700;
 }
 
 .text {
-  margin-top: 5px;
   margin-bottom: 10px;
 }
